@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+</head>
+<body>
+    <center>
+        <div class="Mbox">
+            <h1>COUNTER</h1>
+            <h4>Times Visted Site</h4>
+            <p>You visted {{session['amount']}} times already</p>
+            <div id="sbox">
+                <form action="/amount_clicked_timnes" method="post">
+                <input class="unlist" name="numOfTimes" id="numTimes"  type="text" placeholder="How many times do you want to visit this site?" name="times_vist">
+                    <input class="W" type="submit" value="submit">
+                </form>
+                <form action="/amount_clicked" method="post">
+                     <input class="btn" name="revisit" type="submit" value="Visit 1 more">
+                </form>
+                <form action="/inc_2" method="post">
+                    <input class="btn" name="inc_2" type="submit" value="increment by 2">
+               </form>   
+                <form action="/reset" method="post">
+                     <input class="btn" name="destroy" type="submit" value="reset value">
+                </form>        
+                <form action="/destroy_session" method="post">
+                     <input class="btn" name="destroy" type="submit" value="destroy data">
+                </form>        
+     
+            </div>
+        </div>
+    </center>
+        
+</body>
+</html>

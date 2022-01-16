@@ -1,0 +1,49 @@
+:root{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    font-size: 3rem;
+    margin-top: -15px;
+}
+h4{
+    margin-top: -15px;
+}
+input{
+    margin-top:20px;
+}
+
+.Mbox{
+    height: 500px;
+    width: 400px;
+    background-color: powderblue;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+
+#numTimes{
+    width: 360px;
+    display: flex;
+    border-radius: 50px;
+    text-align:center;
+
+}
+.W{
+    display: block;
+    margin-top: 5px;
+    background-color: mediumturquoise;
+    border: 2px solid black ;
+    border-radius: 50px;
+
+}
+
+.btn{
+    background-color: mediumturquoise;
+    border: 2px solid black ;
+    border-radius: 50px;
+}
+
+#sbox{
+    display: flex;
+    flex-direction: column;
+}
